@@ -1,0 +1,165 @@
+ /* App.css */
+ .table-wrapper {
+   overflow-x: auto;
+   /* Adiciona scroll horizontal quando necessário */
+ }
+
+ /* Mantenha o restante dos estilos para a tabela conforme fornecido */
+ .App {
+   font-family: Arial, sans-serif;
+   padding: 20px;
+   background-color: #f7f7f7;
+   /* Cor de fundo suave */
+ }
+
+ h1 {
+   text-align: center;
+   color: black;
+   margin-bottom: 30px;
+ }
+
+ table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-bottom: 20px;
+ }
+
+ th,
+ td {
+   border: 1px solid #ddd;
+   padding: 8px;
+
+ }
+
+ th {
+   background-color: #f2f2f2;
+   font-weight: bold;
+   text-align: left;
+   color: black;
+   text-align: center;
+ }
+
+ td {
+   text-align: center;
+
+ }
+
+ tr:nth-child(even) {
+   background-color: #f2f2f2;
+ }
+
+ .acoes button {
+   margin-right: 5px;
+   padding: 8px 16px;
+   border: none;
+   cursor: pointer;
+   border-radius: 4px;
+
+ }
+
+ .excluir {
+   background-color: #dc3545;
+   /* Vermelho suave */
+   color: white;
+   margin-left: 15px;
+ }
+
+ .salvar {
+   background-color: #28a745;
+   /* Verde suave */
+   color: white;
+ }
+
+ .editar {
+   background-color: #ffd700;
+   /* Azul suave */
+   color: white;
+
+ }
+
+ .campoTabela {
+   width: 100%;
+   padding: 5px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   transition: border-color 0.3s;
+ }
+
+ .pesquisar {
+   width: 70%;
+   padding: 5px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   transition: border-color 0.3s;
+   margin-bottom: 10px;
+   text-align: center;
+   margin-left: 14em;
+ }
+
+ input[type="text"]:focus {
+   border-color: #007bff;
+ }
+
+ .botoes {
+   display: flex;
+   justify-content: space-between;
+ }
+
+ .adicionar,
+ .pdf {
+   background-color: #4caf50;
+   /* Verde suave */
+   color: white;
+   border: none;
+   padding: 10px 20px;
+   font-size: 16px;
+   border-radius: 30px;
+   /* Borda mais arredondada */
+   cursor: pointer;
+   transition: background-color 0.3s;
+   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   /* Sombra suave */
+
+ }
+
+ .pdf {
+   background-color: #00b3a6;
+ }
+
+ .adicionar:hover {
+   background-color: #55c15a;
+   /* Verde um pouco mais escuro */
+ }
+
+
+ .grayed-out {
+   background-color: #f2f2f2;
+   /* define a cor de fundo cinza */
+   color: #808080;
+   /* define a cor do texto cinza */
+   cursor: not-allowed;
+   /* muda o cursor para indicar que o campo não pode ser clicado */
+   margin-left: 10px;
+ }
+
+ .popup {
+  visibility: hidden;
+  min-width: 250px;
+  background-color: #edff50;
+  color: #000000;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+  transition: visibility 0.3s;
+}
+
+.popup.show {
+  visibility: visible;
+}
